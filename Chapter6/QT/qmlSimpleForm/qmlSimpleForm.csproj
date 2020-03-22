@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RunWorkingDirectory>$(MSBuildProjectDirectory)</RunWorkingDirectory>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="**\*.qmlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Main.qml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.qml">
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Qml.Net" Version="0.10.1" />
+    <PackageReference Include="Qml.Net.OSXBinaries" Version="0.10.1" />
+  </ItemGroup>
+  
+</Project>

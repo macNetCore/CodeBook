@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RunWorkingDirectory>$(MSBuildProjectDirectory)</RunWorkingDirectory>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="**\*.qmlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="images\active.png" />
+    <None Remove="images\b.png" />
+    <None Remove="images\bkg.png" />
+    <None Remove="images\hov.png" />
+    <None Remove="images\lens.png" />
+    <None Remove="images\polygon_1.png" />
+    <None Remove="images\polygon_1_copy.png" />
+    <None Remove="images\polygon_bg.png" />
+    <None Remove="images\polygon_bg_copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\active.png" />
+    <Content Include="images\b.png" />
+    <Content Include="images\bkg.png" />
+    <Content Include="images\hov.png" />
+    <Content Include="images\lens.png" />
+    <Content Include="images\polygon_1.png" />
+    <Content Include="images\polygon_1_copy.png" />
+    <Content Include="images\polygon_bg.png" />
+    <Content Include="images\polygon_bg_copy.png" />
+  </ItemGroup>
+  
+   <ItemGroup>
+    <PackageReference Include="Qml.Net" Version="0.10.1" />
+    <PackageReference Include="Qml.Net.OSXBinaries" Version="0.10.1" />
+  </ItemGroup>
+  
+</Project>
